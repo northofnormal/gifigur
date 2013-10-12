@@ -1,0 +1,6 @@
+<h2>You need a GIF?</h2>
+
+<% @pictures.each do |pic| %>
+  <p><%= pic[:emotion] %></p>
+  <img src="<%= pic[:url] %>">
+<% end %>
