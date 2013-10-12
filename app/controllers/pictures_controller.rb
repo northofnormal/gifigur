@@ -34,4 +34,12 @@ class PicturesController < ApplicationController
     ]
     @picture = @pictures[params[:id].to_i]
   end
+
+  def new
+    
+  end
+
+  def create
+    render :text => "MOAR GIFS. Emotion: #{params[:emotion]}, URL: #{params[:url]}"
+  end
 end
