@@ -1,13 +1,13 @@
 <h2>Need MOAR GIFS!</h2>
 
-<%= form_tag "/pictures" do %>
+<%= form_for @picture do |pic| %>
   <p>
-    <%= label_tag "emotion" %>: <%= text_field_tag "emotion" %>
+    <%= pic.label "emotion" %>: <%= pic.text_field "emotion" %>
   </p>
   <p>
-    <%= label_tag "url" %>: <%= text_field_tag "url" %>
+    <%= pic.label "url" %>: <%= pic.text_field "url" %>
   </p>
   <p>
-    <%= submit_tag "Save" %>
+    <%= pic.submit "Save" %>
   </p>
 <% end %>
