@@ -1,0 +1,13 @@
+<h2>Fix this GIF</h2>
+
+<%= form_for @picture do |pic| %>
+  <p>
+    <%= pic.label "emotion" %>: <%= pic.text_field "emotion" %>
+  </p>
+  <p>
+    <%= pic.label "url" %>: <%= pic.text_field "url" %>
+  </p>
+  <p>
+    <%= pic.submit "Save" %>
+  </p>
+<% end %>
