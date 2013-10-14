@@ -1,6 +1,6 @@
 <h2>You need a GIF?</h2>
-
+<%= link_to "Add moar GIFs", "/pictures/new" %>
 <% @pictures.each do |pic| %>
   <p><%= pic[:emotion] %></p>
-  <img src="<%= pic[:url] %>">
+  <%= link_to image_tag(pic.url), "/pictures/#{pic.id}"  %>
 <% end %>
